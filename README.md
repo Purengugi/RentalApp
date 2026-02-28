@@ -1,69 +1,66 @@
-RentalApp - A Peer-to-Peer Rental Marketplace
-Tagline: Access, Don't Own.
+# RentalApp - A Peer-to-Peer Rental Marketplace
+
 
 RentalApp is a full-stack web application that creates a trusted community marketplace for peer-to-peer rentals. It allows users to earn money by listing their own items for rent, and provides an affordable and sustainable way for others to access items they need without having to own them.
 
-Key Features
-For Customers (Renters)
-Browse & Discover: Explore a marketplace of available products with filtering and search capabilities.
+# Key Features
 
-Detailed Product Views: View product details, multiple photos, pricing, location, and seller information.
+# For Customers (Renters)
 
-Seamless Booking: Select a date range from a calendar and send a rental request directly to the seller.
+- Browse & Discover: Explore a marketplace of available products with filtering and search capabilities.
 
-Customer Dashboard: Track the status of all your rental requests (pending, approved, declined).
+- Detailed Product Views: View product details, multiple photos, pricing, location, and seller information.
 
-Real-Time Chat: Once a booking is approved, communicate directly with the seller via a built-in, real-time inbox to coordinate pickup and return.
+- Seamless Booking: Select a date range from a calendar and send a rental request directly to the seller.
 
-Secure User Profiles: Manage your profile, update personal information, and upload an avatar.
+- Customer Dashboard: Track the status of all your rental requests (pending, approved, declined).
 
-For Owners (Sellers)
-Effortless Listing: Easily add new products for rent with details like name, description, category, price, location, and multiple photos.
+- Real-Time Chat: Once a booking is approved, communicate directly with the seller via a built-in, real-time inbox to coordinate pickup and return.
 
-Seller Dashboard: A central hub to view all your listed products and manage incoming rental requests.
+- Secure User Profiles: Manage your profile, update personal information, and upload an avatar.
 
-Request Management: Approve or decline rental requests from customers with a single click.
+# For Owners (Sellers)
 
-Inventory Control: Approving a request automatically marks the item as "Rented Out," preventing double-bookings.
+- Effortless Listing: Easily add new products for rent with details like name, description, category, price, location, and multiple photos.
 
-Direct Communication: Use the real-time inbox to chat with customers about their approved rentals.
+- Seller Dashboard: A central hub to view all your listed products and manage incoming rental requests.
 
-Tech Stack
+- Request Management: Approve or decline rental requests from customers with a single click.
+
+- Inventory Control: Approving a request automatically marks the item as "Rented Out," preventing double-bookings.
+
+- Direct Communication: Use the real-time inbox to chat with customers about their approved rentals.
+
+# Tech Stack
+
 This project is a full-stack application built with a modern technology stack.
 
-Category
-
-Technology
-
-Frontend
+1 Frontend
 
 Next.js (React Framework), TypeScript, shadcn/ui, Tailwind CSS, Zustand (State Management), Socket.IO Client
 
-Backend
+2 Backend
 
 Node.js, Express.js, Socket.IO
 
-Database
+3 Database
 
 MongoDB (with Mongoose) hosted on MongoDB Atlas
 
-Image & File Storage
+4 Image & File Storage
 
 Cloudinary
 
-Deployment
 
-Vercel (Frontend) & Render (Backend)
-
-Local Development Setup
+# Local Development Setup
 To run this project on your local machine, follow these steps.
 
-Prerequisites
+# Prerequisites
 Node.js (v18 or later)
 
 npm or yarn
 
-Git
+# Git
 
 1. Backend Setup
 # Clone the backend repository
@@ -97,7 +94,7 @@ npm run dev
 
 The frontend application will start on http://localhost:3000.
 
-Environment Variables
+# Environment Variables
 You must create .env and .env.local files for the backend and frontend respectively.
 
 Backend .env
@@ -123,6 +120,6 @@ NEXT_PUBLIC_API_BASE_URL=http://localhost:5000
 # Your Cloudinary Cloud Name
 NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=your_cloud_name
 
-Challenges & Key Learnings
+# Challenges & Key Learnings
 A significant challenge during development was ensuring real-time state synchronization between separate components, such as updating the Navbar avatar instantly after a profile picture change. This was solved by implementing a global state management solution with Zustand, creating a single source of truth for user data and ensuring a seamless user experience across the application. This approach proved far more reliable than prop drilling or simple data re-fetching.
 
